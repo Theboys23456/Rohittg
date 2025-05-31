@@ -11,14 +11,14 @@ def start(update, context):
     update.message.reply_text("Bot is working!")
 
 if __name__ == '__main__':
-    updater = Updater("YOUR_BOT_TOKEN")
+    updater = Updater("8060723392:AAH1FI4eW37qq85M6-ga9TbntUs-pLnm0yo")
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     updater.start_polling()
     updater.idle()
 import uuid
 
-BOT_NAME = os.environ.get("BOT_NAME", "TXT Video Bot")
+BOT_NAME = os.environ.get("testingbotxbot", "TXT Video Bot")
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
@@ -128,7 +128,7 @@ def create_video_from_text(text, resolution, name_text):
 if __name__ == '__main__':
     import asyncio
     import os
-    TOKEN = os.environ.get("BOT_TOKEN")
+    TOKEN = os.environ.get("8060723392:AAH1FI4eW37qq85M6-ga9TbntUs-pLnm0yo")
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
